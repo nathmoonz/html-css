@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:hand;
+    src: url(handwriting.ttf);
+    font-weight:normal;
+    font-style: bold;
+    
+}
+body {
+    background-color: rgb(208, 250, 236);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: rgb(65, 126, 106);
+}
+h1#principal {
+    text-align: center;
+    font-family: hand, Helvetica, sans-serif;
+    font-size: 30px;
+}
+h2 {
+    color: rgb(99, 188, 158);
+}
+.basico {
+    color: rgb(115, 75, 152);
+}
+.intermediario {
+    color: rgb(146, 68, 68);
+}
+.avancado {
+    color: deeppink;
+}

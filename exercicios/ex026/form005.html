@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="isxmas">
+                <input type="radio" name="sexo" id="isxmas"> Masculino</label> <br>
+            <label for="isxfem">
+                <input type="radio" name="sexo" id="isxfem"> Feminino</label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <label for="iesbas">
+                <input type="checkbox" name="esbas" id="iesbas"> Basquete</label> <br>
+            <label for="iesfut">
+                <input type="checkbox" name="esfut" id="iesfut"> Futebol</label> <br>
+            <label for="iesnat">
+                <input type="checkbox" name="esnat" id="iesnat"> Natação</label> <br>
+            <label for="iesten">
+                <input type="checkbox" name="esten" id="iesten"> Tênis</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Extra</legend>
+            <label for="icor">Cor: <input type="color" name="cor" id="icor"></label> <br>
+            <p>
+                <label for="inivel">Satisfação
+                    <input type="range" name="nivel" id="inivel" min="1" max="5">
+                </label>
+            </p>
+            <p>
+                <label for="ifoto">Foto de perfil</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        <fieldset>
+            <legend>Listas</legend>
+            <p>
+                <label for="iest">Estado</label>
+                <select name="estado" id="iest">
+
+                    <option value="" selected>---Escolha---</option>
+                    <optgroup label="Região Sudeste">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+
+                    <optgroup label="Região Nordeste">
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="Ma">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="iprof">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option >Administrador</option>
+                    <option >Contabilista</option>
+                    <option >Desenvolvedor</option>
+                    <option >Professor</option>
+                </datalist>
+            </p>
+
+            <p>
+                <label for="imsg">Mensagem</label> <br>
+                <textarea name="msg" id="imsg" cols="30" rows="10" style="resize: none"></textarea>
+            </p>
+
+        </fieldset>
+    </form>
+</body>
+</html>

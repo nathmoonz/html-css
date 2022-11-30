@@ -49,3 +49,8 @@ section#login > div#formulario {
     display: block;
     padding: 10px;
 }
+
+div#formulario > h1 {
+    text-align: center;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Inter', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter&family=Righteous&display=swap');
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: #012E40;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 0 2rem; 
+}
+
+.card {
+    position: relative;
+    height: 36rem;
+    width: 100%;
+    min-width: 18em;
+    max-width: 27rem;
+
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow:2px 2px 5px rgba(0, 0, 0, 0.509);  
+}
+
+.title {
+    display: flex;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.ctn-tokyo {
+    background-color: #A6034F;
+}
+
+.img-tokyo {
+    background-image: url(imagens/pexels-aleksandar-pasaric-2506923.jpg);
+   
+}
+
+.container-img {
+    width: 100%;
+    height: 13rem;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.description {
+    margin: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.4rem;
+}
+
+.container-btn {
+    display: flex;
+    position: absolute;
+    width:100%;
+    display: flex;
+    height: 2.5rem;
+    bottom: 0;
+    color: white;
+    font-size: 1.1rem;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.551);
+}
+
+.btn-tokyo {
+    background-color:#5A4266;
+}
+
+.btn-tokyo:hover {
+    background-color:#352434 ;
+}
+
+/* ------------------------------------ */
+
+.ctn-bdp {
+    background-color: #458AB4;
+}
+
+.img-bdp {
+    background-image: url(imagens/budapest.jpg);
+}
+
+.btn-bdp {
+    background-color:#F2B705;
+}
+
+.btn-bdp:hover {
+    cursor: pointer;
+    background-color:#F29F05 ;
+}
+
+/* ------------------------------------- */
+
+.ctn-vnz {
+    background-color: #F2845C;
+}
+
+
+.img-vnz {
+    background-image: url(imagens/veneza.jpg);
+}
+
+.btn-vnz {
+    background-color:#63A67B;
+}
+
+.btn-vnz:hover {
+    background-color:#93A603 ;
+}
+
+@media screen and (800px > width) {
+
+    body{
+        height: auto;
+        flex-direction: column;
+    }
+
+}

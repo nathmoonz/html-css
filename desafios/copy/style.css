@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    background-color: #f3eae3;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.9rem;
+}
+
+.card {
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 35rem;
+}
+
+.image-desktop {
+    display: none;
+}
+
+.image-container img {
+    max-width: 100%;
+}
+
+.infos {
+    padding: 1.5rem;
+}
+
+.category {
+    font-size: .8rem;
+    color: #8c8f96;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-bottom: .6rem;
+}
+
+.title {
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: .8rem;
+}
+
+.description {
+    font-size: .9rem;
+    font-weight: 500;
+    color: #8c8f96;
+    line-height: 1.2rem;
+    margin-bottom: 1.3rem;
+}
+
+.price-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.price-info .price {
+    color: #3d8168;
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+.price-info .old-price {
+    color: #8c8f96;
+    text-decoration: line-through;
+    font-size: .9rem;
+}
+
+.btn-add {
+    background-color: #3d8168;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+}
+
+.btn-add:active {
+    background-color: #326955;
+}
+
+.image-container {
+    position: relative;
+}
+
+@media screen and (630px < width) {
+    .card {
+        flex-direction: row;
+        max-height: 25rem;
+    }
+
+    .image-container {
+        width: 60rem;
+    }
+
+    .image-desktop {
+        display: block;
+    }
+
+    .image-mobile {
+        display: none;
+    }
+
+    .infos {
+        padding: 2rem;
+    }
+}
